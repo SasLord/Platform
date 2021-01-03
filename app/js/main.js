@@ -7,6 +7,10 @@ $(document).ready(function(){
         $('.aSide').hide();
         $('.aSide-1').show();
     });
+    $(".link-aSide-2").click(function(){
+        $('.aSide').hide();
+        $('.aSide-2').show();
+    });
     $(".navSide-caption__btn").click(function(){
         if (navSideB) {
             $('.navSide-list').hide();
@@ -14,7 +18,7 @@ $(document).ready(function(){
             $('.navSide-btn').hide();
             $('.navSide').addClass('navSideMin');
             $('.navSide').removeClass('navSide');
-            $('.navSide-caption__btn').addClass('navSide-btn-style');
+            $('.navSide-caption__btn').addClass('navSide-caption__btn-styleMin');
             $('.navSide-caption__btn').removeClass('navSide-caption__btn-style');
         } else {
             $('.navSide-list').show();
@@ -22,7 +26,7 @@ $(document).ready(function(){
             $('.navSideMin').addClass('navSide');
             $('.navSideMin').removeClass('navSideMin');
             $('.navSide-caption__btn').addClass('navSide-caption__btn-style');
-            $('.navSide-caption__btn').removeClass('navSide-btn-style');
+            $('.navSide-caption__btn').removeClass('navSide-caption__btn-styleMin');
             $('.navSide-btn').show();
         }
         navSideB = !navSideB;

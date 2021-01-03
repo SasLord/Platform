@@ -36,7 +36,7 @@
             <li class="navSide-list__item"><a href="#"># Флуд</a></li>
             <li class="navSide-list__item"><a href="#"># События</a></li>
         </ul>
-        <img class="navSide-btn navSide-btn-style" src="images/ico-plus.svg">
+        <img class="navSide-btn" src="images/ico-plus.svg">
     </div>
     <div class="mainArea shadowW">
         <div class="mainArea-caption">
@@ -54,7 +54,7 @@
                 <div class="msgArea-messages__msg">
                     <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-1.png"></div>
                     <div class="msgArea-messages__msg-block">
-                        <div class="msgArea-messages__msg-caption">Александр Алексеенко<span>10:15</span></div>
+                        <div class="msgArea-messages__msg-caption">Александр Алексеенко<span class="msgDate">10:15</span></div>
                         <div class="msgArea-messages__msg-text">
                             ну да, на клиенте все равно мы забиваем на это всё пока. CoreException/CoreError - а где это посмотреть, что-то по коду не найду такого? Или это nodejs'ное что-то?
                         </div>
@@ -63,7 +63,7 @@
                 <div class="msgArea-messages__msg">
                     <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-2.png"></div>
                     <div class="msgArea-messages__msg-block">
-                        <div class="msgArea-messages__msg-caption">Андрей Платов<span>10:31</span></div>
+                        <div class="msgArea-messages__msg-caption">Андрей Платов<span class="msgDate">10:31</span></div>
                         <div class="msgArea-messages__msg-text">
                             <p>наше</p>
                             <p>хм походу после всех переписываний исчело за неиспользованием</p>
@@ -74,7 +74,7 @@
                 <div class="msgArea-messages__msg">
                     <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-3.png"></div>
                     <div class="msgArea-messages__msg-block">
-                        <div class="msgArea-messages__msg-caption">Сергей Буевич<span>12:30</span></div>
+                        <div class="msgArea-messages__msg-caption">Сергей Буевич<span class="msgDate">12:30</span></div>
                         <div class="msgArea-messages__msg-text">
                             <p>в rpc.ts объявлен</p>
 <pre>export interface RpcError {
@@ -86,16 +86,78 @@
                         </div>
                     </div>
                 </div>
-                <div class="msgArea-messages__msg-date">
-                    <div class="msgArea-messages__msg-date-div"></div>
-                    <div class="msgArea-messages__msg-date-text">сегодня</div>
+                <div class="msgArea-messages__msg-div">сегодня</div>
+                <div class="msgArea-messages__msg">
+                    <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-1.png"></div>
+                    <div class="msgArea-messages__msg-block">
+                        <div class="msgArea-messages__msg-caption">Александр Алексеенко<span class="msgDate">10:15</span></div>
+                        <div class="msgArea-messages__msg-text">
+                            ну да, на клиенте все равно мы забиваем на это всё пока. CoreException/CoreError - а где это посмотреть, что-то по коду не найду такого? Или это nodejs'ное что-то?
+                        </div>
+                    </div>
                 </div>
                 <div class="msgArea-messages__msg">
                     <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-1.png"></div>
                     <div class="msgArea-messages__msg-block">
-                        <div class="msgArea-messages__msg-caption">Александр Алексеенко<span>10:15</span></div>
+                        <div class="msgArea-messages__msg-caption">Александр Алексеенко<span class="msgAction">оставил комментарий в</span><span class="msgPlace">Офис Новосибирск</span><span class="msgDate">10:31</span></div>
                         <div class="msgArea-messages__msg-text">
-                            ну да, на клиенте все равно мы забиваем на это всё пока. CoreException/CoreError - а где это посмотреть, что-то по коду не найду такого? Или это nodejs'ное что-то?
+                            Ну да, на клиенте все равно мы забиваем на это всё пока. CoreException/CoreError -а где это посмотреть, что-то по коду не найду такого? Или это nodejs'ное что-то?
+                        </div>
+                    </div>
+                </div>
+                <div class="msgArea-messages__msg-date">
+                    <div class="msgArea-messages__msg-date-number msg-colorRed">29</div>
+                    <div class="msgArea-messages__msg-date-text">Ноябрь, воскресенье</div>
+                </div>
+                <div class="msgArea-messages__msg">
+                    <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-4.png"></div>
+                    <div class="msgArea-messages__msg-block">
+                        <div class="msgArea-messages__msg-caption">Андрей Соболев<span class="msgAction">добавил файлы в репозиторий</span><span class="msgPlace">anticrm/platform</span><span class="msgDate">12:40</span></div>
+                        <div class="msgArea-messages__msg-text">
+                            <a class="link-file" href="#">interfaceRpcErrors.sd.js</a>
+                            <a class="link-file" href="#">interfaceRpcErrors.sd.js</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="msgArea-messages__msg">
+                    <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-4.png"></div>
+                    <div class="msgArea-messages__msg-block">
+                        <div class="msgArea-messages__msg-caption">Андрей Соболев<span class="msgAction">добавил файлы в репозиторий</span><span class="msgPlace">anticrm/platform</span><span class="msgDate">13:43</span></div>
+                        <div class="msgArea-messages__msg-text">
+                            <a class="link-file" href="#">setupTypeScript.js</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="msgArea-messages__msg">
+                    <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-2.png"></div>
+                    <div class="msgArea-messages__msg-block">
+                        <div class="msgArea-messages__msg-caption">Андрей Платов<span class="msgAction">добавил файлы в</span><span class="msgPlace">#Общее</span><span class="msgDate">12:40</span></div>
+                        <div class="msgArea-messages__msg-text">
+                            <a class="link-file" href="#">Ошибки.docx</a>
+                            <a class="link-file" href="#">Что доделать по дизайну.docx</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="msgArea-messages__msg-date">
+                    <div class="msgArea-messages__msg-date-number">30</div>
+                    <div class="msgArea-messages__msg-date-text">Ноябрь, понедельник</div>
+                </div>
+                <div class="msgArea-messages__msg">
+                    <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-1.png"></div>
+                    <div class="msgArea-messages__msg-block">
+                        <div class="msgArea-messages__msg-caption">Александр Алексеенко<span class="msgAction">создал новую встречу </span><a class="link-aSide-2" href="#">Обсуждаем дизайн таймлайна</a><span class="msgDate">10:00</span></div>
+                        <div class="msgArea-messages__msg-text">
+                        </div>
+                    </div>
+                </div>
+                <div class="msgArea-messages__msg">
+                    <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-2.png"></div>
+                    <div class="msgArea-messages__msg-block">
+                        <div class="msgArea-messages__msg-caption">Андрей Платов<span class="msgAction">оставил комментарий в</span><span class="msgPlace">#Общее</span><span class="msgDate">10:31</span></div>
+                        <div class="msgArea-messages__msg-text">
+                            <p>для этого типа есть CoreException и там код тоже есть если ты поймал CoreException то код из него надо ставить</p>
+                            <p>если не CoreError то неизвестный код - ставь 0</p>
+                            <p>все равно пока никакие коды нигде не прописаны</p>
                         </div>
                     </div>
                 </div>
@@ -135,6 +197,61 @@
         </div>
         <div class="aSide-area">
             <img class="aSide-image" src="images/image-1.jpg">
+            <div class="aSide-text">
+                <p>По спейсам и чатам решаем оставить следующий концепт:</p>
+                <ul>
+                <li>По-прежнему один чат на спейс.</li>
+                <li>Секьюрити права свои на каждый спейс.</li>
+                <li>Для маркировки объектов и документов введём (позже) тэги, возможно и супертэги.</li>
+                <li>Документы вроде "Meeting minutes" создаются в спейсах, куда есть доступ всем нужным сотрудникам, можно будет их фильтровать по тэгам.</li>
+                <li>Нужно решить (можно позже), где отображать на UI тэги и типы объектов.</li>
+                </ul>
+                <p>Все верно?</p>
+            </div>
+        </div>
+    </div>
+    <div class="aSide aSide-2 shadowW">
+        <div class="aSide-caption">
+            <p class="title">Обсуждаем новый дизайн тайм-лайна</p>
+            <div class="aSide-caption__btn"><img src="images/ico-close.svg"></div>
+        </div>
+        <div class="aSide-author">
+            <img class="avatar-32nb" src="images/photo-1.png">
+            <div class="aSide-author__name">Александр Алексеенко</div>
+            <div class="aSide-author__date">30.11.20, 15:30</div>
+        </div>
+        <div class="aSide-area">
+            <div class="aSide-meetBox">
+                <div class="aSide-meetBox__date">30 ноября, понедельник</div>
+                <div class="aSide-meetBox__time">09:00 — 10:30</div>
+                <div class="aSide-meetBox__buttons">
+                    <button class="btn btn-accept" type="button">Принять</button>
+                    <button class="btn btn-cancel" type="button">Отказаться</button>
+                </div>
+            </div>
+            <div class="aSide-membersBox">
+                <div class="aSide-membersBox__item">
+                    <img class="avatar avatar-32" src="images/photo-1.png">
+                    <div class="aSide-membersBox__item-block">
+                        <div class="aSide-membersBox__item-name">Александр Алексеенко</div>
+                        <div class="aSide-membersBox__item-status">Принял</div>
+                    </div>
+                </div>
+                <div class="aSide-membersBox__item">
+                    <img class="avatar avatar-32" src="images/photo-3.png">
+                    <div class="aSide-membersBox__item-block">
+                        <div class="aSide-membersBox__item-name">Сергей Буевич</div>
+                        <div class="aSide-membersBox__item-status">Принял</div>
+                    </div>
+                </div>
+                <div class="aSide-membersBox__item">
+                    <img class="avatar avatar-32" src="images/photo-2.png">
+                    <div class="aSide-membersBox__item-block">
+                        <div class="aSide-membersBox__item-name">Андрей Платов</div>
+                        <div class="aSide-membersBox__item-status msg-colorRed">Отказался</div>
+                    </div>
+                </div>
+            </div>
             <div class="aSide-text">
                 <p>По спейсам и чатам решаем оставить следующий концепт:</p>
                 <ul>
