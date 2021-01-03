@@ -6,7 +6,9 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -48,10 +50,104 @@
             </div>
         </div>
         <div class="msgArea">
-            
+            <div class="msgArea-messages">
+                <div class="msgArea-messages__msg">
+                    <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-1.png"></div>
+                    <div class="msgArea-messages__msg-block">
+                        <div class="msgArea-messages__msg-caption">Александр Алексеенко<span>10:15</span></div>
+                        <div class="msgArea-messages__msg-text">
+                            ну да, на клиенте все равно мы забиваем на это всё пока. CoreException/CoreError - а где это посмотреть, что-то по коду не найду такого? Или это nodejs'ное что-то?
+                        </div>
+                    </div>
+                </div>
+                <div class="msgArea-messages__msg">
+                    <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-2.png"></div>
+                    <div class="msgArea-messages__msg-block">
+                        <div class="msgArea-messages__msg-caption">Андрей Платов<span>10:31</span></div>
+                        <div class="msgArea-messages__msg-text">
+                            <p>наше</p>
+                            <p>хм походу после всех переписываний исчело за неиспользованием</p>
+                            <p>но думаю появится когда будем четче обрабатывать <b>Ошибки</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msgArea-messages__msg">
+                    <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-3.png"></div>
+                    <div class="msgArea-messages__msg-block">
+                        <div class="msgArea-messages__msg-caption">Сергей Буевич<span>12:30</span></div>
+                        <div class="msgArea-messages__msg-text">
+                            <p>в rpc.ts объявлен</p>
+<pre>export interface RpcError {
+  code: number
+  message?: string
+  data?: any
+}</pre>
+                            <p>Надо бы придумать, что за code numbers там будут для нотификаций клиента об ошибках сервера. Сделал, чтобы сервер все эксепшны заворачивал в еррор респонз с этим RpcError'ом, тока код непонятно какой ставить )</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msgArea-messages__msg-date">
+                    <div class="msgArea-messages__msg-date-div"></div>
+                    <div class="msgArea-messages__msg-date-text">сегодня</div>
+                </div>
+                <div class="msgArea-messages__msg">
+                    <div class="msgArea-messages__msg-ava"><img class="avatar avatar-32" src="images/photo-1.png"></div>
+                    <div class="msgArea-messages__msg-block">
+                        <div class="msgArea-messages__msg-caption">Александр Алексеенко<span>10:15</span></div>
+                        <div class="msgArea-messages__msg-text">
+                            ну да, на клиенте все равно мы забиваем на это всё пока. CoreException/CoreError - а где это посмотреть, что-то по коду не найду такого? Или это nodejs'ное что-то?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainArea-board">
+            <textarea class="mainArea-board__msgText name="msgText" id="msgText" placeholder="Написать в # Общее"></textarea>
+            <div class="mainArea-board__panel">
+                <div class="mainArea-board__panel-icons">
+                    <img class="mainArea-board__panel-icons-icon" src="images/brd-bold.svg">
+                    <img class="mainArea-board__panel-icons-icon" src="images/brd-italic.svg">
+                    <img class="mainArea-board__panel-icons-icon" src="images/brd-stroke.svg">
+                    <div class="mainArea-board__panel-icons-div"></div>
+                    <img class="mainArea-board__panel-icons-icon" src="images/brd-code.svg">
+                    <img class="mainArea-board__panel-icons-icon" src="images/brd-ul.svg">
+                    <img class="mainArea-board__panel-icons-icon" src="images/brd-ol.svg">
+                    <div class="mainArea-board__panel-icons-div"></div>
+                    <img class="mainArea-board__panel-icons-icon" src="images/brd-link.svg">
+                    <div class="mainArea-board__panel-icons-div"></div>
+                    <img class="mainArea-board__panel-icons-icon" src="images/brd-addr.svg">
+                    <img class="mainArea-board__panel-icons-icon" src="images/brd-smile.svg">
+                    <img class="mainArea-board__panel-icons-icon" src="images/brd-attach.svg">
+                </div>
+                <div class="mainArea-board__panel-send"><img src="images/brd-send.svg"></div>
+            </div>
         </div>
     </div>
-    <div class="aSide shadowW"></div>
+    <div class="aSide shadowW">
+        <div class="aSide-caption">
+            <p class="title">Ошибки по спейсам и чатам, которые нужно исправить</p>
+            <div class="aSide-caption__btn"><img src="images/ico-close.svg"></div>
+        </div>
+        <div class="aSide-author">
+            <img class="avatar-32nb" src="images/photo-4.png">
+            <div class="aSide-author__name">Андрей Соболев</div>
+            <div class="aSide-author__date">30.11.20, 15:30</div>
+        </div>
+        <div class="aSide-area">
+            <img class="aSide-image" src="images/image-1.jpg">
+            <div class="aSide-text">
+                <p>По спейсам и чатам решаем оставить следующий концепт:</p>
+                <ul>
+                <li>По-прежнему один чат на спейс.</li>
+                <li>Секьюрити права свои на каждый спейс.</li>
+                <li>Для маркировки объектов и документов введём (позже) тэги, возможно и супертэги.</li>
+                <li>Документы вроде "Meeting minutes" создаются в спейсах, куда есть доступ всем нужным сотрудникам, можно будет их фильтровать по тэгам.</li>
+                <li>Нужно решить (можно позже), где отображать на UI тэги и типы объектов.</li>
+                </ul>
+                <p>Все верно?</p>
+            </div>
+        </div>
+    </div>
     <script src="js/main.min.js"></script>
 </body>
 </html>
