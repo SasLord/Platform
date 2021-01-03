@@ -27,6 +27,7 @@ p {
 }
 a {
     text-decoration: none;
+    font-weight: 700;
     color: $link-color;
 }
 .title {
@@ -57,6 +58,15 @@ a {
     }
 }
 
+.navSideMin {
+    background-color: $bg-color;
+    flex-basis: 60px;
+    min-width: 60px;
+    width: 100%;
+    padding: 26px 16px 26px 16px;
+    display: flex;
+    flex-direction: column;
+}
 .navSide {
     background-color: $bg-color;
     color: $grey-color;
@@ -75,11 +85,11 @@ a {
         margin-bottom: 8px;
         display: flex;
         justify-content: space-between;
-        .title {
+        &__title {
             margin-top: -2px;
             margin-left: 8px;
         }
-        &__btn {
+        &__btn-style {
             margin-top: 2px;
             margin-right: 8px;
         }
@@ -110,7 +120,7 @@ a {
             }
         }
     }
-    &-btn {
+    &-btn-style {
         width: 16px;
         height: 16px;
         margin: 0 auto;
